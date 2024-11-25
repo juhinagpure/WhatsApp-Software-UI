@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp Software</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>WhatsApp Software</h1>
+      </header>
+
+      <main>
+        <section class="message-section">
+          <h2>Add Message</h2>
+          <textarea
+            id="messageInput"
+            placeholder="Type your message here..."
+          ></textarea>
+        </section>
+
+        <section class="files-section">
+          <h2>Attach Files & Photos</h2>
+          <div class="file-inputs">
+            <button id="attachButton">Attach</button>
+            <button id="clearButton">Clear</button>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Filename</th>
+                <th>Type</th>
+                <th>Caption</th>
+              </tr>
+            </thead>
+            <tbody id="fileList"></tbody>
+          </table>
+        </section>
+
+        <section class="contacts-section">
+          <h2>Contacts</h2>
+          <div class="contacts-controls">
+            <button id="addContactsButton">Add Contacts</button>
+            <button id="importContactsButton">Import Contacts</button>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>S.NO</th>
+                <th>Phone</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="contactsList"></tbody>
+          </table>
+        </section>
+
+        <section class="log-section">
+          <h2>Sending Log</h2>
+          <textarea
+            id="logInput"
+            placeholder="Log your actions here..."
+          ></textarea>
+          <div class="log-buttons">
+            <button id="saveLogButton">Save</button>
+            <button id="deleteLogButton">Delete</button>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <button id="getQRCodeButton">Get QR Code</button>
+        <button id="logoutButton" class="danger">Logout</button>
+        <p>Click the button to load QR code</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
